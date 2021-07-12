@@ -27,8 +27,8 @@ public class PracticeFormTest {
         $("#genterWrapper").$(byText("Male")).click();
         $("#userNumber").setValue("9651435879");
         $("#dateOfBirthInput").click();
-        $(byClassName("react-datepicker__month-select")).selectOptionByValue("7");
-        $(byClassName("react-datepicker__year-select")).selectOptionByValue("1980");
+        $(".react-datepicker__month-select").selectOptionByValue("7");
+        $(".react-datepicker__year-select").selectOptionByValue("1980");
         $(".react-datepicker__day--014").click();
         $("#subjectsInput").setValue("Maths").pressEnter();
         $("#hobbiesWrapper").$(byText("Reading")).click();
@@ -37,7 +37,7 @@ public class PracticeFormTest {
         $("#currentAddress").setValue("Lenina street 18");
         $("#react-select-3-input").setValue("NCR").pressEnter();
         $("#react-select-4-input").setValue("Delhi").pressEnter();
-        $(byText("Submit")).scrollTo().click();
+        $("#submit").scrollTo().click();
 
         $(".modal-body").shouldHave(text("Ivan"));
         $(".modal-body").shouldHave(text("Ivanov"));
